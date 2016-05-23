@@ -5,6 +5,7 @@
     <output-test url="file://$MODULE_DIR$/.idea/target/test-classes" />
     <content url="file://$MODULE_DIR$/.idea">
       <sourceFolder url="file://$MODULE_DIR$/.idea/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/.idea/target" />
     </content>
     <orderEntry type="inheritedJdk" />
