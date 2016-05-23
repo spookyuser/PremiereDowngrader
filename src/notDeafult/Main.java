@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
+        //https://stackoverflow.com/questions/37371185/javafx-deadlock-when-using-setvisible-method-with-dragevent
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root = loader.load();
         SampleController controller = loader.getController();
