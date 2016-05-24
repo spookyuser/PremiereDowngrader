@@ -4,7 +4,7 @@
 
 You can find the source code under: **/src/**
 
-And runnable apps under out/artifacts/
+And runnable apps under **/out/artifacts/**
 
 You need Java installed I guess
 

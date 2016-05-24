@@ -1,32 +1,26 @@
 package notDeafult;
-import javafx.application.Platform;
-import javafx.concurrent.Task;
-import javafx.embed.swing.JFXPanel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import java.io.File;
-import java.io.IOException;
 
 import org.apache.commons.io.*;
 
-import javax.swing.*;
 
 public class SampleController {
     public TextArea brows;
     public ComboBox<keyVal> dropdown  = new ComboBox<keyVal>();
     public Button saveBtn;
+    public TextFlow source;
     logic lg = new logic();
     @FXML public Button browse;
     @FXML private GridPane paney;
