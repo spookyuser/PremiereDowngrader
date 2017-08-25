@@ -1,19 +1,4 @@
-#Premiere Downgrade
-
-##A small Java application that changes the xml value for version in premiere files.
-
-You can find the source code under: **/src/**
-
-And runnable apps under **/out/artifacts/**
-
-You need Java installed I guess
-
-Thanks StackOverflow
-
-
-https://stackoverflow.com/questions/37283107/how-to-make-minor-edits-to-an-xml-file-in-java
-
-https://stackoverflow.com/questions/37371185/javafx-deadlock-when-using-setvisible-method-with-dragevent
-
-
-:)
+<p align="center">
+<h1 align="center">Premiere Downgrader</h1>
+  <img src="https://cdn.rawgit.com/spookyUnknownUser/83fad43485479415d58d4d9549057679/raw/274b652840b77735322866af3c7e2e6365826faa/triangle.svg" width="100%" height="144">
+</p>
