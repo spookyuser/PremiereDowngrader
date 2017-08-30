@@ -1,0 +1,74 @@
+group 'spookyunknownuser'
+version '1.0.0'
+
+buildscript {
+    ext.kotlin_version = '1.1.4-3'
+
+    repositories {
+        jcenter()
+
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+mainClassName = "PremiereDowngraderApp"
+
+repositories {
+    jcenter()
+}
+
+ext {
+    rxJava = '2.1.1'
+    rxKotlin = '2.1.0'
+    rxKotlinFx = '2.1.1'
+    okio = '1.13.0'
+    dagger = '2.11'
+    staticlog = '2.1.9'
+    tornadoFx = '1.7.10'
+    jdom = '2.0.6'
+}
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    // Rx
+    compile "io.reactivex.rxjava2:rxjava:$rxJava"
+    compile "io.reactivex.rxjava2:rxkotlin:$rxKotlin"
+    compile "com.github.thomasnield:rxkotlinfx:$rxKotlinFx"
+    // Dagger
+    compile "com.google.dagger:dagger:$dagger"
+    kapt "com.google.dagger:dagger-compiler:$dagger"
+    // Misc
+    compile "no.tornado:tornadofx:$tornadoFx"
+    compile "io.github.jupf.staticlog:staticlog:$staticlog"
+    compile "com.squareup.okio:okio:$okio"
+    compile "org.jdom:jdom2:$jdom"
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+idea {
+    module {
+        sourceDirs += file('build/generated/source/kapt/main')
+        generatedSourceDirs += file('build/generated/source/kapt/main')
+    }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+
+}

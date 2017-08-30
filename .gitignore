@@ -1,49 +1,69 @@
-/.idea
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# Created by https://www.gitignore.io/api/intellij
 
-# Folder config file
-Desktop.ini
+### Intellij ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# User-specific stuff:
+.idea/
+build/
+.gradle/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
 
-# Windows shortcuts
-*.lnk
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
 
-# =========================
-# Operating System Files
-# =========================
+# CMake
+cmake-build-debug/
 
-# OSX
-# =========================
+# Mongo Explorer plugin:
+.idea/**/mongoSettings.xml
 
-.DS_Store
-.AppleDouble
-.LSOverride
+## File-based project format:
+*.iws
 
-# Thumbnails
-._*
+## Plugin-specific files:
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
+# IntelliJ
+/out/
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-.idea/workspace.xml
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+### Intellij Patch ###
+# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+
+# *.iml
+# modules.xml
+# .idea/misc.xml
+# *.ipr
+
+# Sonarlint plugin
+.idea/sonarlint
+
+# End of https://www.gitignore.io/api/intellij
+
