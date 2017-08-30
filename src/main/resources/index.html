@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--  Meta  -->
+    <meta charset="UTF-8"/>
+    <title>Bodymovin Demo</title>
+
+    <!--  Styles  -->
+    <style type="text/css">html,
+    body {
+        background-color: #2b2b2b;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    #bm {
+        width: 100%;
+        height: 100%;
+    }</style>
+
+</head>
+<body>
+
+<div id="bm"></div>
+
+<!-- Scripts -->
+<script src="bodymovin_light.min.js"></script>
+<script>
+    var animation = bodymovin.loadAnimation({
+        container: document.getElementById('bm'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'data.json',
+        rendererSettings: {
+            progressiveLoad: false
+        }
+    });
+
+    animation.addEventListener("loopComplete", function () {
+        alert("loopComplete")
+    })
+</script>
+</body>
+</html>
