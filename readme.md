@@ -1,5 +1,5 @@
 <p align="center">
-<img src="src/main/resources/icon.png" width="100%" height="128">
+<img src="src/main/resources/icon.png">
 <p align="center">
 :video_camera: A stupid simple JavaFx app that downgrades Premiere Pro :page_facing_up:s
   <p align="center">
